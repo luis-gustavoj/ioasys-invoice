@@ -23,5 +23,7 @@ module.exports = withReactSvg({
         }
       });
     });
+
+    return config;
   },
 });
