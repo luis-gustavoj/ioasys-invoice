@@ -1,4 +1,6 @@
 .hero-container {
+  max-width: 1440px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -55,6 +57,10 @@
         font-size: 1rem;
         font-weight: 400;
       }
+    }
+
+    .smoky-background-image {
+      transform: translate(-50%, -55%) scale(1.1);
     }
   }
 }
