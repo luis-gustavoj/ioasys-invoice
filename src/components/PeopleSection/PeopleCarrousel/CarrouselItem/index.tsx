@@ -26,19 +26,20 @@ export const CarrouselItem = ({ personInfo }: CarrouselItemProps) => {
     const currentWidth = carrouselItemRef.current.offsetWidth;
     const newWidth = currentWidth + 64;
 
-    innerContentRef.current.style.opacity = 1;
+    innerContentRef.current.style.opacity = "1";
+
     carrouselItemRef.current.style.width = `${newWidth}px`;
   };
 
-  const onMouseOut = () => {
-    innerContentRef.current.style.opacity = 0;
+  const onMouseLeave = () => {
+    innerContentRef.current.style.opacity = "0";
     carrouselItemRef.current.style.width = `20%`;
   };
 
   return (
     <div
       onMouseEnter={onMouseEnter}
-      onMouseOut={onMouseOut}
+      onMouseLeave={onMouseLeave}
       ref={carrouselItemRef}
       className={styles.carrouselItem}
       style={{
