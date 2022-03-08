@@ -72,12 +72,12 @@ export const PeopleCard = ({ peopleInfo }: PeopleCardProps) => {
           ))}
         </div>
         <span className={styles.socialMediaContainer}>
-          <Link href="">
+          <Link href="#">
             <a>
               <LinkedinIcon />
             </a>
           </Link>
-          <Link href="">
+          <Link href="#">
             <a>
               <InstagramIcon />
             </a>

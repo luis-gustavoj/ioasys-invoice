@@ -23,6 +23,7 @@ export const Hero = () => {
             height={628}
             width={839}
             alt="Background image"
+            priority
           />
         </div>
       </div>
