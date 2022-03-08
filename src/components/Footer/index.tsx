@@ -1,3 +1,4 @@
+import React from "react";
 import IoasysIcon from "@svg/ioasys-icon.svg";
 
 import styles from "./styles.module.scss";
@@ -47,12 +48,10 @@ export const Footer = () => {
           <div>
             <span>
               {socialMediasLinks.map((socialMedia, index) => (
-                <>
-                  <a href={socialMedia.link} key={socialMedia.name}>
-                    {socialMedia.name}
-                  </a>
+                <React.Fragment key={socialMedia.name}>
+                  <a href={socialMedia.link}>{socialMedia.name}</a>
                   {index !== socialMediasLinks.length - 1 && " | "}
-                </>
+                </React.Fragment>
               ))}
             </span>
           </div>
